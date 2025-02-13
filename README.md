@@ -2,7 +2,7 @@
 
 # pls bare with me its not done lol
 ## 📌 Overview  
-Welcome to the **Five Dynamics Website**! This is the official website for our **suborbital rocket club**, built using **Next.js** and **Three.js (React Three Fiber)**. It features **interactive 3D models**, **dynamic content**, and a **modern UI** to showcase our mission and projects.  
+Welcome to the **Five Dynamics Website**! This is the official website for our **suborbital rocket club**, built using **Next.js** and **Three.js**, and **React**.
 
 
 ---
@@ -12,10 +12,6 @@ Welcome to the **Five Dynamics Website**! This is the official website for our *
 │   ├── a
 
 ```
-
-# 5D Website
-
-Welcome to the **Five Dynamics Website**! This is the official website for our **suborbital rocket club**, built using **Next.js** and **Three.js**, and **React**.
 
 ## Prerequisites
 
