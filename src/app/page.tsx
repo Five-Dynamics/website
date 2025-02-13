@@ -78,10 +78,7 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
-      <div className={styles.textBottomLeft}>
-        <h2>EXTRA</h2>
-        <h2>ORDINARY</h2>
-      </div>
+      <div className={styles.textBottomLeft}></div>
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter, Geist_Mono } from 'next/font/google';
 import './style/globals.css';
-import './assets/custom-font.css';
+import './style/custom-font.css';
 import Header from './components/header';
+import Scene from './components/scene';
+import styles from './style/Home.module.css';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -29,7 +31,20 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${geistMono.variable} antialiased custom-font`}
       >
-        <Header />
+        <div className="header">
+          <Header />
+        </div>
+        <div className="relative">
+          <Scene />
+          <div className={styles.textTopRight}>
+            <h2>ENGINEERING</h2>
+            <h2>THE</h2>
+          </div>
+          <div className={styles.textBottomLeft}>
+            <h2>EXTRA</h2>
+            <h2>ORDINARY</h2>
+          </div>
+        </div>
         {children}
       </body>
     </html>

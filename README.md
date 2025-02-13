@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Five Dynamics Website  
 
-## Getting Started
+# pls bare with me its not done lol
+## 📌 Overview  
+Welcome to the **Five Dynamics Website**! This is the official website for our **suborbital rocket club**, built using **Next.js** and **Three.js (React Three Fiber)**. It features **interactive 3D models**, **dynamic content**, and a **modern UI** to showcase our mission and projects.  
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+## 📂 **Project Structure**  
+```sh
+├── src
+│   ├── a
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 5D Website
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Welcome to the **Five Dynamics Website**! This is the official website for our **suborbital rocket club**, built using **Next.js** and **Three.js**, and **React**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prerequisites
 
-## Learn More
+Before you begin, ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (version 14.x or higher)
+- [npm](https://www.npmjs.com/) (version 6.x or higher)
 
-To learn more about Next.js, take a look at the following resources:
+## Setting Up
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to set up the project on your local machine:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+```bash
+   git clone https://github.com
+   cd website
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install Dependencies**
+```bash
+npm install
+```
+3. **Run the Development Server**
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Code Quality & Best Practices
+✅ **Check Formatting with Prettier**
+
+🔍 **Lint Code with ESLint**
