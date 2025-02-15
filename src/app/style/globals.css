@@ -1,0 +1,211 @@
+/* Tailwind CSS base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables */
+:root {
+  --background: #000000;
+  --foreground: #171717;
+  --main: #fd2026;
+  --slightly-lighter: #1e1e1e;
+  --light: #ffffff;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #171717;
+  }
+}
+
+/* Global styles */
+body,
+html {
+  color: var(--light);
+  background: var(--background);
+  margin: 0;
+  font-family: var(--font-inter), var(--font-geist-mono), sans-serif;
+  font-size: 12px;
+  overflow-x: hidden; 
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background);
+  z-index: 1000;
+}
+
+header .logo {
+  height: 60px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 150px;
+}
+
+nav ul li {
+  position: relative;
+  color: var(--main);
+}
+
+nav ul li a {
+  color: var(--main);
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  padding-left: 10px;
+  border-left: solid 2px var(--light);
+  transform: translatex(-30px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  padding: 10px 20px;
+  color: var(--light);
+  position: relative;
+}
+
+nav ul li ul li a {
+  color: var(--light);
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 0;
+  height: 2px;
+  background-color: var(--light);
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li ul li:hover {
+  background-color: var(--background);
+  color: var(--main);
+}
+
+nav ul li ul li:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+/* Utility classes */
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-5xl {
+  font-size: 5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.scene {
+  position: relative;
+  z-index: 1;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 3px solid #000000; 
+}
+
+/* Firefox scrollbar styles */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #1e1e1e #000000;
+}
+
+/* Keyframes */
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Additional styles */
+.t {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.longer { /* this was just to make one part of the navbar longer..*/
+  width: 400px;
+}
